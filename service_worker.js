@@ -2,7 +2,7 @@ const sCacheName = "hello-pwa";
 const aFilesToCache = [
   "./",
   "./index.html",
-  "./manilfest.json",
+  "./manifest.json",
   "./images/hello-pwa.png",
 ];
 
