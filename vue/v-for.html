@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>고객정보</h1>
+        <ul>
+            <li v-for="(item, index) in aPersons">
+                번호 : {{ index }}
+                <br/>
+                이름 : {{ item.sName}}
+                <br/>
+                나이 : {{ item.sAge}}
+
+            </li>
+        </ul>
+    </div>
+    <script>
+        let app = new Vue({
+            el:'#app',
+            data: {
+                aPersons: [
+                    { sName:'박용호', sAge:'20'},
+                    { sName:'정헤숙', sAge:'30'},
+                    { sName:'박경빈',sAge:'14'}
+                    
+                ]
+            }
+        });
+    </script>
+</body>
+</html>

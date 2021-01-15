@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="main">
+        <p>{{ sHello }}</p>
+        <input v-model:value="sMsg">
+        <p>{{ sMsg }}</p>
+    </div>
+    <script>
+        let app = new Vue({
+            el:'#main',
+            data: {
+                sHello:"안녕하세요.!",
+                sMsg: "",
+            }
+        });
+    </script>
+</body>
+</html>
