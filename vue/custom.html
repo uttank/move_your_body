@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="main">
+        <my-element></my-element>
+    </div>
+    <script>
+        Vue.component('my-element',{
+            data: function() {
+                return {
+                    strHello: '안녕하세요', strGoodbye:'Goodbte'
+                }
+            },
+            template:
+             `
+             <div>
+                <h1>이렇게 하면 되나 {{ strHello }}</h1>
+                <h2>뭐라도해봐     {{strGoodbye}}</h2>
+            </div>
+            `
+        });
+        new Vue({
+            el: '#main',
+           
+        })
+    </script>
+</body>
+</html>
